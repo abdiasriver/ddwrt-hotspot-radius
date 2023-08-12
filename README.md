@@ -10,11 +10,14 @@ Utilizamos la instalacion descrita en el repositorio `https://github.com/abdiasr
 
 - Respaldo de la db
 ```
-mysqldump -p -u root radius > dbname.sql
+mysqldump -p -u root radius > dbackup.sql
 ```
 - Restaurar db
+
+
 ```
-mysql -p -u root radius < dbname.sql
+git clone https://github.com/abdiasriver/ddwrt-hotspot-radius.git
+mysql -p -u root radius < /root/ddwrt-hotspot-radius/chilichili.sql
 ```
 
 ## Hotspotlogin
