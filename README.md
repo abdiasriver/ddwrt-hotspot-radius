@@ -8,6 +8,15 @@ Hotspotlogin = En la carpeta hotspot se encuentran los archivos del portal o ini
 ## Daloradius
 Utilizamos la instalacion descrita en el repositorio `https://github.com/abdiasriver/dalodeb`
 
+- Respaldo de la db
+```
+mysqldump -p -u root radius > dbname.sql
+```
+- Restaurar db
+```
+mysql -p -u root radius < dbname.sql
+```
+
 ## Hotspotlogin
 Necesitamos una pagina php de logeo que se abrira como portal  hotspot cuando el usuario ingrese a nuestra wifi, esta pedira dos datos `usuario` y `password` y lo obtendra desde `daloradius` guardado en su base de datos.
 Los archivos que utilizaremos estan en la carpeta `hotspot` viene modificado de acuerdo a mis necesidades.
