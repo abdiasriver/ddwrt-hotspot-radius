@@ -26,3 +26,22 @@ _Igualmente se incluye la carpeta hotspotbk por si se desea usar la configuracio
 - Primero obtnemos un router que soporte el sistema ddwrt, podremos saberlo ingresando al link `https://dd-wrt.com/support/router-database/` 
 ingresando el nombre por ejemplo `archer` o `tp-link`
 - Instalamos el sistema segun su tutorial y firmware.
+
+1. En el router en `default` se coloca la configuracion parecida a esta.
+
+![1setup](https://github.com/abdiasriver/ddwrt-hotspot-radius/assets/13319563/531cdc93-75d2-49d4-bed9-59719f4df5e4)
+
+2. Despues para el hotspot se coloca lo siguiente de acuerdo a tus datos, de servidor radius y de la pagina php hotspotlogin.php.
+
+![2hotspot](https://github.com/abdiasriver/ddwrt-hotspot-radius/assets/13319563/5b6fa918-e9e6-4390-ae60-47c3208dc158)
+
+3. Alternativamente podemos subir el backup de configuracion, y al guardar y aplicar los cambios, los datos de acceso son.
+
+   SSID = venta wifi prueba
+   IP= 192.168.85.1
+   USUARIO= Rivera
+   CLAVE= 84River@B
+
+   y cambiamos los datos en `services>hotspot`.
+
+   4. Hacer pruebas creando usuarios en daloradius y logueando, igualmente perfiles de tiempos.
