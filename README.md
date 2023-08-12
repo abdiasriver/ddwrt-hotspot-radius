@@ -5,14 +5,18 @@ Ddwrt = Sistema para el router ,en este caso utilizamos archer c9, y alli config
 
 Hotspotlogin = En la carpeta hotspot se encuentran los archivos del portal o inicio de logeo del cliente, estos van en la carpeta del servidor en /var/www/html/hotspot
 
+El objetivo de este tutorial es tener un router en casa, el cual reparta internetpor medio de fichas o vouchers, en tiempo pausado y corrido, las cuales se administraran desde el servidor en la nube que contiene daloradius, el hotspotlogin.php o pagina de login en el cual el cliente introducira la ficha se encuentra alhojada en el servidor donde esta daloradius, y en el router ddwrt solo introduciremos su ubicacion o direccion url.
+El router fisico tendra el sistema ddwrt , el cual se instala de acuerdo al tutorial de la pagina ddwrt.
+
 ## Daloradius
 Utilizamos la instalacion descrita en el repositorio `https://github.com/abdiasriver/dalodeb`
+tambien al finalizar la instalacion podemos importar la siguiente base de datos por si la que esta en el tutorial da algun error.
 
 - Respaldo de la db
 ```
 mysqldump -p -u root radius > dbackup.sql
 ```
-- Restaurar db
+- Restaurar db o importar base de datos.
 
 
 ```
