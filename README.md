@@ -21,6 +21,8 @@ mysqldump -p -u root radius > dbackup.sql
 
 ```
 git clone https://github.com/abdiasriver/ddwrt-hotspot-radius.git
+cd ddwrt-hotspot-radius
+cp -r hotspot /var/www/html
 mysql -p -u root radius < /root/ddwrt-hotspot-radius/chilichili.sql
 ```
 
