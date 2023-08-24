@@ -1,7 +1,7 @@
 # ddwrt-hotspot-radius
 Servidor Radius (daloradius) = perfiles, fichas,vouchers,tiempos, daloradius es instalado en el servidor web.
 
-Ddwrt = Sistema para el router ,en este caso utilizamos archer c9, y alli configuramos el hotspot
+Ddwrt = Sistema para el router ,en este caso utilizamos archer c9 (v1,v2,v3,v4), y alli configuramos el hotspot
 
 Hotspotlogin = En la carpeta hotspot se encuentran los archivos del portal o inicio de logeo del cliente, estos van en la carpeta del servidor en /var/www/html/hotspot
 
